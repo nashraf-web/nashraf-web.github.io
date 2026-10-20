@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Is My Website Not on Google? 9 Causes and How to Fix Each One (2026)</title>
+<meta name="description" content="Website not showing on Google? The 9 real causes — indexing blocks, noindex tags, sitemap errors, canonical issues — and how to check and fix each one.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234f7cff'/%3E%3Cstop offset='.5' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='900' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why Is My Website Not on Google? 9 Causes and How to Fix Each One (2026)">
+<meta property="og:description" content="The 9 real causes — indexing blocks, noindex tags, sitemap errors, canonical issues — and how to check and fix each one.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Why Is My Website Not on Google? 9 Causes and How to Fix Each One (2026)","description":"Website not showing on Google? The 9 real causes — indexing blocks, noindex tags, sitemap errors, canonical issues — and how to check and fix each one.","author":{"@type":"Organization","name":"CloudEmythos Services","url":"https://services.cloudemythos.org/"},"publisher":{"@type":"Organization","name":"CloudEmythos Services"},"datePublished":"2026-10-20","dateModified":"2026-10-20","mainEntityOfPage":"https://services.cloudemythos.org/services/blog/why-website-not-on-google.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How long does indexing take?","acceptedAnswer":{"@type":"Answer","text":"For an established site, new pages are often indexed within a few days. For a brand-new site, first indexing can take one to four weeks, and some pages take longer. Requesting indexing in Search Console can speed up the first crawl, but Google still decides whether the page earns a place in the index."}},
+{"@type":"Question","name":"Can I force Google to index my page?","acceptedAnswer":{"@type":"Answer","text":"No. The Request Indexing button in Search Console asks Google to crawl the page sooner; it does not guarantee indexing. If a page stays in 'Crawled - currently not indexed', the durable fix is better content, stronger internal links and removing any technical block — not repeated requests."}},
+{"@type":"Question","name":"Does paying for Google Ads help indexing?","acceptedAnswer":{"@type":"Answer","text":"No. Google Ads has no effect on organic indexing or rankings. Ads and organic search are separate systems: paying for ads neither speeds up indexing nor improves your position in the free results."}},
+{"@type":"Question","name":"When should I hire help?","acceptedAnswer":{"@type":"Answer","text":"If you have worked through the checks in this guide and pages still won't index, if Search Console reports errors you don't recognize, or if your time is worth more than the hours a full audit takes, an audit-and-fix service is usually the fastest route. A good provider fixes the causes and documents everything in a written report."}}]}
+</script>
+<style>
+:root{
+  --bg:#070b14; --bg2:#0b1120; --card:#0e1628; --line:#1c2a45;
+  --txt:#e8eefc; --mut:#93a4c3; --acc:#4f7cff; --acc2:#8b5cf6; --ok:#22c55e;
+  --grad:linear-gradient(90deg,#4f7cff,#8b5cf6,#ec4899);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(7,11,20,.82);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-weight:900;font-size:20px;letter-spacing:-.5px}
+.logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;gap:28px;color:var(--mut);font-size:15px;font-weight:500}
+.nav-links a:hover{color:var(--txt)}
+.btn{display:inline-block;padding:13px 26px;border-radius:12px;font-weight:700;font-size:15px;background:var(--grad);color:#fff;transition:.2s;border:none;cursor:pointer}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(99,102,241,.35)}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--txt)}
+.btn.sm{padding:9px 18px;font-size:14px}
+.article-head{padding:64px 0 8px;background:radial-gradient(720px 380px at 50% -60px,rgba(99,102,241,.28),transparent 65%)}
+.article-head .wrap{max-width:820px}
+.crumb{color:var(--acc);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:clamp(30px,4.6vw,44px);font-weight:900;line-height:1.15;letter-spacing:-1px;margin-bottom:16px}
+.byline{color:var(--mut);font-size:14.5px}
+.article{max-width:820px;margin:0 auto;padding:26px 24px 70px}
+.answer{background:linear-gradient(120deg,rgba(79,124,255,.14),rgba(139,92,246,.12));border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:14px;padding:22px 26px;margin-bottom:30px}
+.answer p{color:var(--txt);font-size:16.5px;margin:0}
+.article p{color:var(--mut);font-size:16.5px;margin-bottom:18px}
+.article p strong,.article li strong{color:var(--txt)}
+.article h2{font-size:26px;font-weight:800;letter-spacing:-.5px;margin:42px 0 14px;color:var(--txt)}
+.article h3{font-size:18px;font-weight:700;margin:24px 0 8px;color:var(--txt)}
+.article ul{color:var(--mut);font-size:16px;margin:0 0 18px 22px}
+.article li{margin-bottom:8px}
+.article a.inline{color:var(--acc);font-weight:600}
+code{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:14px;color:var(--txt);font-family:ui-monospace,Menlo,monospace}
+.tbl-wrap{overflow-x:auto;margin:26px 0 10px}
+table{width:100%;border-collapse:collapse;font-size:15px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+th{background:var(--bg2);color:var(--txt);text-align:left;padding:13px 16px;font-weight:700;border-bottom:1px solid var(--line)}
+td{color:var(--mut);padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td:first-child{color:var(--txt);font-weight:600}
+.cta-box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;text-align:center;margin:36px 0}
+.cta-box h3{font-size:20px;margin-bottom:8px;color:var(--txt)}
+.cta-box p{max-width:520px;margin:0 auto 18px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+summary{font-weight:700;cursor:pointer;font-size:16px}
+details p{color:var(--mut);margin-top:9px;font-size:15px}
+footer{border-top:1px solid var(--line);padding:38px 0;color:var(--mut);font-size:14px}
+.foot-in{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot-in a:hover{color:var(--txt)}
+@media(max-width:720px){.nav-links{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="../index.html">Cloud<span>Emythos</span> Services</a>
+    <div class="nav-links">
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="../index.html#toolkit">DIY Toolkit</a>
+      <a href="../index.html#faq">FAQ</a>
+    </div>
+    <a class="btn sm" href="../index.html#pricing">Get started</a>
+  </div>
+</nav>
+
+<header class="article-head">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Blog</a> · Indexing &amp; SEO</div>
+    <h1>Why Is My Website Not on Google? 9 Causes and How to Fix Each One (2026)</h1>
+    <div class="byline">By CloudEmythos Services · October 20, 2026 · From our daily audit work on live sites</div>
+  </div>
+</header>
+
+<main class="article">
+
+  <div class="answer">
+    <p><strong>The short answer:</strong> if your website is not on Google, it is almost always one of nine causes — Google has not indexed the page yet, a <code>noindex</code> tag or robots.txt rule is blocking it, your sitemap is missing or broken, the content is too thin or duplicated, the page has no internal links, the site is too new, technical errors are stopping the crawl, a manual action is in place, or your canonical tags point Google to a different version of the page. Each cause is checkable in Google Search Console in minutes, and each one has a specific fix, covered below.</p>
+  </div>
+
+  <p>We run technical audits on live websites every week, and "my site isn't on Google" is the most common problem owners bring us. The good news: invisibility on Google is rarely mysterious. Google reports the state of every URL it knows about, for free, in Search Console — you just need to know where to look. Work through the nine causes below in order, from most common to least.</p>
+
+  <h2>1. The page is discovered or crawled, but not indexed</h2>
+  <p>This is the most common case by far. Google knows your page exists, may even have crawled it, but has not added it to the index. In Search Console these pages sit under <strong>"Discovered – currently not indexed"</strong> (Google knows the URL but hasn't crawled it yet) or <strong>"Crawled – currently not indexed"</strong> (Google crawled it and decided, for now, not to include it). "Crawled – currently not indexed" is usually a quality and priority judgement: the page looked thin, duplicated, or low-value compared with the rest of your site.</p>
+  <p><strong>How to check:</strong> open Search Console → Indexing → Pages, and look at the "Not indexed" reasons. Click a reason to see the affected URLs. Then paste any single URL into the URL Inspection tool to see its exact status and last crawl date.</p>
+  <p><strong>How to fix it:</strong> strengthen the page (more original, useful content), link to it from related pages on your site, make sure it is in your sitemap, then use URL Inspection → Request Indexing. For "Crawled – currently not indexed" at scale, the fix is site-wide: prune or merge weak pages so Google's quality signals concentrate on the pages that matter.</p>
+
+  <h2>2. A noindex tag or robots.txt rule is blocking the page</h2>
+  <p>Sometimes the site itself tells Google to stay away. A <code>noindex</code> meta tag (or an <code>X-Robots-Tag: noindex</code> header) instructs Google to keep the page out of the index even after crawling it. A <code>Disallow</code> rule in robots.txt goes further and blocks crawling entirely. These settings are often left over from a development or staging phase — WordPress's "Discourage search engines" checkbox is a classic culprit — or set accidentally by an SEO plugin.</p>
+  <p><strong>How to check:</strong> in Search Console, inspect the URL. Statuses like "Excluded by 'noindex' tag" or "Blocked by robots.txt" name the problem directly. You can also view the page source and search for <code>noindex</code>, and open <code>yourdomain.com/robots.txt</code> to read the rules yourself.</p>
+  <p><strong>How to fix it:</strong> remove the <code>noindex</code> tag from pages you want indexed, untick the WordPress discouragement setting (Settings → Reading), and edit robots.txt so it no longer disallows your important folders. Then request indexing again.</p>
+
+  <h2>3. Your sitemap is missing, broken, or out of date</h2>
+  <p>Your XML sitemap is the map you hand to Google. If it was never submitted, returns an error, or lists old URLs while omitting your new pages, discovery slows to a crawl. A sitemap that includes redirected, blocked, or 404 URLs also wastes Google's time and trust.</p>
+  <p><strong>How to check:</strong> go to Search Console → Indexing → Sitemaps. A healthy sitemap shows status "Success" with a recent read date. Open the sitemap URL in your browser: it should return XML listing only live, canonical, indexable URLs.</p>
+  <p><strong>How to fix it:</strong> generate a fresh sitemap (your CMS or SEO plugin can do this automatically), remove any erroring or redirected URLs from it, submit it in Search Console, and reference it with a <code>Sitemap:</code> line in robots.txt.</p>
+
+  <h2>4. Thin or duplicate content</h2>
+  <p>Google indexes pages it considers worth a slot in its results. Pages with a few sentences of generic text, content copied from other sites, or near-identical pages targeting the same search (twenty location pages with only the city name changed, for example) are routinely crawled and then dropped. Unedited AI-generated text with no original information or clear purpose falls into the same trap: it adds nothing Google doesn't already have.</p>
+  <p><strong>How to check:</strong> look for "Duplicate without user-selected canonical" and "Alternate page with proper canonical tag" in the Pages report, and read your thinnest pages honestly — would this page satisfy someone who searched for its topic better than the pages already ranking?</p>
+  <p><strong>How to fix it:</strong> expand thin pages with genuinely useful, specific information (your own experience, data, examples, answers), merge duplicates into one strong page with redirects from the weak versions, and delete content with no real purpose. One excellent page outranks five shallow ones.</p>
+
+  <div class="cta-box">
+    <h3>🎁 Not sure which cause is hitting your site?</h3>
+    <p>Send us your website URL and we'll reply with the top errors we find and what they are costing you — a free mini health check, no strings attached.</p>
+    <a class="btn" href="mailto:contact@cloudemythos.org?subject=Free%20mini%20health%20check&body=My%20website%20URL%3A%20">Request my free check</a>
+  </div>
+
+  <h2>5. The page is an orphan — no internal links point to it</h2>
+  <p>Google discovers pages mainly by following links. A page that no other page on your site links to — an orphan — may only be found through the sitemap, and even then Google reads the lack of internal links as a signal that the page isn't important. Pages buried four or five clicks from the homepage suffer a milder version: crawled rarely, indexed slowly.</p>
+  <p><strong>How to check:</strong> in URL Inspection, look at "Referring page" — if it's empty or only lists your sitemap, the page is effectively orphaned. A crawl of your site with any standard crawler will also list orphan pages directly.</p>
+  <p><strong>How to fix it:</strong> add links from relevant, already-indexed pages — your homepage where appropriate, related articles, category and hub pages — using descriptive anchor text. Every important page should be reachable within about three clicks from the homepage.</p>
+
+  <h2>6. The site is brand new and has no authority yet</h2>
+  <p>A site launched last week has no backlinks, no crawl history, and no track record — and Google treats it accordingly. New sites are crawled cautiously, indexed gradually, and ranked conservatively until they earn trust. This is not a penalty; it is the normal starting state, and it frustrates owners because nothing is technically "wrong."</p>  <p><strong>How to check:</strong> if your technical setup is clean (causes 1–5 all clear), your Search Console Performance report shows impressions slowly growing from zero, and your domain is only days or weeks old, time and signals are the missing ingredients.</p>
+  <p><strong>How to fix it:</strong> submit your sitemap, request indexing for your most important pages, publish consistently useful content, and earn your first legitimate mentions and links — business directories, social profiles, partners, and coverage in your niche. Expect weeks, not days — watch impressions in Search Console to confirm the trend.</p>
+
+  <h2>7. Technical errors are breaking the crawl</h2>
+  <p>Broken links, pages returning 404 or 5xx errors, redirect chains and loops, and pages so slow that Google's crawler gives up — all of these shrink your effective presence in the index. Mobile matters too: Google indexes the mobile version first, so a page that renders badly on phones is judged on that broken version.</p>
+  <p><strong>How to check:</strong> the Pages report groups these under "Not found (404)", "Server error (5xx)", "Redirect error" and "Soft 404". Test key pages in URL Inspection with "Test live URL" to see exactly what Googlebot receives, and run a full-site crawl to catch broken internal links Google hasn't reported yet.</p>
+  <p><strong>How to fix it:</strong> restore or redirect dead URLs to relevant live pages, fix server errors at the source, collapse redirect chains to a single hop, repair broken internal links, and address the worst speed issues (oversized images are the usual offender). Re-crawl after fixing — errors should trend to zero.</p>
+
+  <h2>8. A manual action or policy problem</h2>
+  <p>Less common, but decisive when it happens: Google can apply a manual action to sites that violate its spam policies — thin affiliate pages with no added value, scraped content, cloaking, or deceptive practices. A manual action can remove pages or the entire site from results, and no amount of technical fixing helps until it is resolved. Ad networks like AdSense apply a similar quality and policy review before approving a site.</p>
+  <p><strong>How to check:</strong> open Search Console → Security &amp; Manual Actions → Manual actions. "No issues detected" means you're clear. Also check the Security issues tab for hacking or malware flags.</p>
+  <p><strong>How to fix it:</strong> remove or genuinely improve the violating content, then file a reconsideration request explaining what you changed. Be thorough the first time — reconsideration reviews are done by humans, and partial clean-ups get rejected.</p>
+
+  <h2>9. Wrong canonicals — including the www vs non-www split</h2>
+  <p>Your canonical tag tells Google which version of a page is the "real" one. If your canonicals point to the wrong version — or your site is reachable at both <code>www</code> and non-<code>www</code> addresses while your sitemap, canonicals and redirects disagree — Google splits its signals between duplicates and may index the version you didn't intend, or neither. We diagnosed exactly this on one of our own sites: the host redirected <code>www</code> to non-<code>www</code>, while the site configuration kept generating <code>www</code> sitemap and canonical URLs — every signal contradicted the redirect.</p>
+  <p><strong>How to check:</strong> in URL Inspection, compare "User-declared canonical" with "Google-selected canonical". If they differ, or the Google-selected one is a URL you'd never choose, you have a canonical problem. Also verify that both versions of your homepage resolve and redirect consistently.</p>
+  <p><strong>How to fix it:</strong> pick one version of your domain, set your site's base URL to it everywhere, regenerate the sitemap with matching URLs, make every canonical self-referencing to that version, and redirect the other version to it. Consistency across redirects, sitemap, canonicals and internal links is the whole fix.</p>
+
+  <h2>All nine causes at a glance</h2>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Cause</th><th>How to check</th><th>Fix difficulty</th></tr>
+      <tr><td>Discovered / crawled, not indexed</td><td>Search Console → Pages report; URL Inspection status</td><td>Medium — content + links work</td></tr>
+      <tr><td>noindex tag or robots.txt block</td><td>URL Inspection; page source; /robots.txt</td><td>Easy — minutes once found</td></tr>
+      <tr><td>Sitemap missing or broken</td><td>Search Console → Sitemaps status</td><td>Easy — regenerate &amp; resubmit</td></tr>
+      <tr><td>Thin or duplicate content</td><td>Pages report (duplicates); honest page review</td><td>Hard — real content work</td></tr>
+      <tr><td>Orphan pages, no internal links</td><td>URL Inspection referring pages; site crawl</td><td>Easy–Medium</td></tr>
+      <tr><td>Brand-new site, no authority</td><td>Domain age; impressions trend in Performance</td><td>Medium — needs time + links</td></tr>
+      <tr><td>Technical errors (404s, 5xx, speed, mobile)</td><td>Pages report error groups; live URL test</td><td>Medium</td></tr>
+      <tr><td>Manual action / policy issue</td><td>Security &amp; Manual Actions in Search Console</td><td>Hard — cleanup + reconsideration</td></tr>
+      <tr><td>Wrong canonicals / www split</td><td>URL Inspection: declared vs Google-selected canonical</td><td>Easy–Medium — configuration fix</td></tr>
+    </table>
+  </div>
+
+  <p>One honest closing note: getting indexed and ranking are two different things. Indexing puts you in the library; ranking decides which shelf. This guide gets your pages into the index — from there, content quality, relevance and earned links determine positions, and no honest professional can promise you a specific rank. What you <em>can</em> control completely is the technical foundation — and most "invisible" sites turn out to have two or three fixable causes from this list stacked together.</p>
+
+  <div class="cta-box">
+    <h3>Want all nine causes checked — and fixed — for you?</h3>
+    <p>Our <strong>Audit &amp; Fix</strong> package runs this exact checklist on your site, fixes what we find, and documents everything in a before/after report. Or start with the <a class="inline" href="mailto:contact@cloudemythos.org?subject=Free%20mini%20health%20check&body=My%20website%20URL%3A%20">free mini health check</a> and see your top errors first.</p>
+    <a class="btn" href="../index.html#pricing">See the Audit &amp; Fix package — $149</a>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <details><summary>How long does indexing take?</summary><p>For an established site, new pages are often indexed within a few days. For a brand-new site, first indexing can take one to four weeks, and some pages take longer. Requesting indexing in Search Console can speed up the first crawl, but Google still decides whether the page earns a place in the index.</p></details>
+  <details><summary>Can I force Google to index my page?</summary><p>No. The Request Indexing button in Search Console asks Google to crawl the page sooner; it does not guarantee indexing. If a page stays in "Crawled – currently not indexed", the durable fix is better content, stronger internal links and removing any technical block — not repeated requests.</p></details>
+  <details><summary>Does paying for Google Ads help indexing?</summary><p>No. Google Ads has no effect on organic indexing or rankings. Ads and organic search are separate systems: paying for ads neither speeds up indexing nor improves your position in the free results.</p></details>
+  <details><summary>When should I hire help?</summary><p>If you have worked through the checks in this guide and pages still won't index, if Search Console reports errors you don't recognize, or if your time is worth more than the hours a full audit takes, an audit-and-fix service is usually the fastest route. A good provider fixes the causes and documents everything in a written report.</p></details>
+
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>© 2026 CloudEmythos Services · Operated by Achraf Ouzzaouit, Jersey City, NJ, USA. CloudEmythos Services is a sole proprietorship.</div>
+    <div style="display:flex;gap:20px">
+      <a href="../privacy.html">Privacy</a>
+      <a href="../terms.html">Terms</a>
+      <a href="../refund.html">Refunds</a>
+      <a href="mailto:contact@cloudemythos.org">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
