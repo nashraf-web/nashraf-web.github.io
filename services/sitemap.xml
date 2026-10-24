@@ -6,4 +6,6 @@
   <url><loc>https://services.cloudemythos.org/services/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://services.cloudemythos.org/services/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://services.cloudemythos.org/services/refund.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://services.cloudemythos.org/services/tidytots-privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://services.cloudemythos.org/services/tidytots-terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

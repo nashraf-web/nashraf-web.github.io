@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TidyTots — Privacy Policy</title>
+<meta name="description" content="How TidyTots (org.cloudemythos.tidytots) handles your family's data: local-first, encrypted, no account, nothing collected from children, no ads, no analytics.">
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1c2733; max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; }
+  h2 { font-size: 1.25rem; margin-top: 2.2rem; }
+  .meta { color: #5a6b7a; font-size: 0.95rem; }
+  .short-version { background: #f2f7ee; border: 1px solid #d5e4c8; border-radius: 0.75rem; padding: 1rem 1.25rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.3rem 0; }
+</style>
+</head>
+<body>
+
+<h1>TidyTots — Privacy Policy</h1>
+<p class="meta">App: TidyTots: Chores &amp; Allowance (package <code>org.cloudemythos.tidytots</code>)<br>
+Developer: OuzzTech<br>
+Last updated: October 24, 2026</p>
+
+<div class="short-version">
+<h2 style="margin-top:0">The short version</h2>
+<ul>
+  <li><strong>TidyTots collects nothing from children.</strong> Children are profiles a parent creates — never users with accounts.</li>
+  <li><strong>No account, no sign-in.</strong> The app never asks for your email address or any login. You set it up on your device and it works.</li>
+  <li><strong>Your family's data lives on your device</strong>, in an encrypted database. The app works fully offline, and there is no multi-device sync in this version.</li>
+  <li><strong>Zero ads for your kids — always.</strong> There is no advertising SDK and no analytics SDK in the app.</li>
+  <li><strong>We never sell or share your family's data.</strong> The only companies that process anything are Google Play (payments) and RevenueCat (subscription verification), and only under your own purchase.</li>
+  <li><strong>You are in control:</strong> you can view, export, and delete all of your family's data inside the app, at any time — including after the free period ends.</li>
+</ul>
+</div>
+
+<h2>1. Who this policy is for</h2>
+<p>TidyTots is used by a parent or guardian (the person who set up the app on the device) to run chores, allowance, and savings goals for their children. Only an adult sets up the app, sets the parent PIN, and makes purchases. Everything below is written for that parent.</p>
+
+<h2>2. What the app stores — and where</h2>
+<p>TidyTots is <strong>local-first</strong>: your family's working data is stored on your device in a database encrypted with SQLCipher, with the encryption key held in Android's secure keystore storage. Stored on the device:</p>
+<ul>
+  <li><strong>Parent setup details:</strong> your family settings, your currency choice, and your parent PIN — stored only as a salted cryptographic hash, never as the digits themselves, and never in a form anyone (including us) can read back. The app has no account and no sign-in, so it never collects your email address.</li>
+  <li><strong>Child profiles:</strong> a first name or nickname, an optional birth year <em>that you enter</em>, and the avatar the child picks from the app's built-in set. No child photos are required, and children never enter their own information anywhere in the app.</li>
+  <li><strong>Family activity:</strong> chores and schedules, approvals, the allowance ledger (amounts, reasons, timestamps, who approved), savings jars and goals, allowance schedules and IOU records, your custody settings, rewards you define, and Love Notes and encouragement badges you write.</li>
+  <li><strong>Photo proofs:</strong> photos captured inside the app when a child shows a finished chore (see §5).</li>
+  <li><strong>App bookkeeping:</strong> the date the app was first launched on the device (used for the free period — see §4).</li>
+</ul>
+
+<h2>3. Children and COPPA: we collect nothing from children</h2>
+<p>Children do not have accounts, email addresses, or passwords in TidyTots, and the app does not collect personal information <em>from</em> children — directly or indirectly. A child's profile contains only what the parent typed in: a first name or nickname, an optional birth year, and a chosen avatar. Profiles live only in the app on the parent's device. Because a parent provides and controls every piece of child-profile information, parents hold the rights described in §8 for all of it.</p>
+
+<h2>4. The 7-day free period and the device hash</h2>
+<p>TidyTots gives every family 7 free days, granted by the app itself. There is <strong>no Play free-trial offer, no card, and nothing that can auto-convert into a charge</strong>. To keep those 7 days honest (so reinstalling the app does not restart them), the app derives a one-way identifier on the device: your device's Android ID combined with an app-specific salt, hashed with SHA-256. <strong>The raw device ID never leaves your phone.</strong> Only the irreversible hash is used — as the anonymous user ID for RevenueCat (see §6) — to remember when the free period began. The hash cannot be used to identify you or your device, and it is not used for advertising or tracking of any kind.</p>
+
+<h2>5. Photo proofs</h2>
+<p>When a chore uses photo proof, the photo is captured with the in-app camera and stored encrypted in your family's space only — on your device. Photo proofs are <strong>automatically deleted 7 days after the parent's decision</strong> on the chore, unless you choose to keep a photo. We never run facial recognition or any biometric processing on photos, never use them for any other purpose, and never share them with any third party.</p>
+
+<h2>6. Purchases: Google Play and RevenueCat</h2>
+<p>All purchases happen in the Parent Zone, behind your PIN, and are processed by <strong>Google Play</strong> under your own Google account. We never see or store your payment-card details. <strong>RevenueCat</strong> verifies your purchases and keeps your subscription and one-time-product entitlements in sync; it receives the purchase receipts issued by Google Play and the anonymous hashed identifier described in §4 — not your name, not your email, and none of your family's chore, ledger, or photo data. There is no other third-party processor. There is no advertising SDK, no analytics SDK, and no crash-reporting service in the app, and security checks that protect purchases run on the device itself.</p>
+
+<h2>7. One device, no sync in this version</h2>
+<p>TidyTots currently works on a single device: your family's data never leaves that device except for purchase verification (see §6). There is no multi-device sync and no server copy of your family's data. If sync is added in a future version, this policy will be updated before it ships, and you will be told in the Parent Zone.</p>
+
+<h2>8. Your rights: view, export, delete</h2>
+<ul>
+  <li><strong>View:</strong> every balance in TidyTots can be opened to show exactly how it got that number, entry by entry.</li>
+  <li><strong>Export:</strong> you can export the full ledger (CSV) and a complete copy of your family's data from the Parent Zone.</li>
+  <li><strong>Delete:</strong> you can delete a child's profile or wipe all family data in the app at any time. Deleting removes the ledger, photos, and stored files. You can also contact us at the address below with any deletion question; there is no server copy of your family's data to delete — everything deletable lives in the app.</li>
+  <li><strong>No hostage data:</strong> if the free period ends or a subscription lapses, your data stays viewable, exportable, and deletable forever. We never lock your family's records behind a payment.</li>
+</ul>
+
+<h2>9. What we never collect and never do</h2>
+<ul>
+  <li>No account, no sign-in, no email address collected.</li>
+  <li>No location data — the app does not request location permission.</li>
+  <li>No contacts, no phone numbers, no advertising ID, no microphone in this version.</li>
+  <li>No data collected from children (see §3).</li>
+  <li>No ads, no personalized advertising, no behavioral analytics, no data sale, no data sharing for marketing — ever.</li>
+  <li>No external links anywhere in Kid Mode, and no purchase surface of any kind is reachable by a child.</li>
+</ul>
+
+<h2>10. Security</h2>
+<p>Family data on the device is encrypted at rest (SQLCipher) with the key protected by Android's secure storage; purchase traffic is encrypted in transit; and purchase integrity is verified against server-checked receipts rather than anything stored locally. Device backups are governed by your device's own settings; TidyTots does not upload your family's data anywhere. No system is perfectly secure, but the design goal is simple: there is very little data anywhere except on your own devices.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>If we change this policy in a way that affects how your family's data is handled, we will update this page, change the date at the top, and surface the change in the Parent Zone before it takes effect. The in-app plain-language summary in the Parent Zone always matches this page.</p>
+
+<h2>12. Contact</h2>
+<p>Questions about privacy, or a deletion request: <strong>contact@cloudemythos.org</strong> (OuzzTech, developer of TidyTots).</p>
+
+</body>
+</html>
