@@ -38,7 +38,7 @@ Last updated: October 24, 2026</p>
 <p>TidyTots is used by a parent or guardian (the person who set up the app on the device) to run chores, allowance, and savings goals for their children. Only an adult sets up the app, sets the parent PIN, and makes purchases. Everything below is written for that parent.</p>
 
 <h2>2. What the app stores — and where</h2>
-<p>TidyTots is <strong>local-first</strong>: your family's working data is stored on your device in a database encrypted with SQLCipher, with the encryption key held in Android's secure keystore storage. Stored on the device:</p>
+<p>TidyTots is <strong>local-first</strong>: your family's working data is stored on your device in a database encrypted with SQLCipher, with the encryption key held in secure on-device storage (Android Keystore / iOS Keychain). Stored on the device:</p>
 <ul>
   <li><strong>Parent setup details:</strong> your family settings, your currency choice, and your parent PIN — stored only as a salted cryptographic hash, never as the digits themselves, and never in a form anyone (including us) can read back. The app has no account and no sign-in, so it never collects your email address.</li>
   <li><strong>Child profiles:</strong> a first name or nickname, an optional birth year <em>that you enter</em>, and the avatar the child picks from the app's built-in set. No child photos are required, and children never enter their own information anywhere in the app.</li>
@@ -50,8 +50,8 @@ Last updated: October 24, 2026</p>
 <h2>3. Children and COPPA: we collect nothing from children</h2>
 <p>Children do not have accounts, email addresses, or passwords in TidyTots, and the app does not collect personal information <em>from</em> children — directly or indirectly. A child's profile contains only what the parent typed in: a first name or nickname, an optional birth year, and a chosen avatar. Profiles live only in the app on the parent's device. Because a parent provides and controls every piece of child-profile information, parents hold the rights described in §8 for all of it.</p>
 
-<h2>4. The 7-day free period and the device hash</h2>
-<p>TidyTots gives every family 7 free days, granted by the app itself. There is <strong>no Play free-trial offer, no card, and nothing that can auto-convert into a charge</strong>. To keep those 7 days honest (so reinstalling the app does not restart them), the app derives a one-way identifier on the device: your device's Android ID combined with an app-specific salt, hashed with SHA-256. <strong>The raw device ID never leaves your phone.</strong> Only the irreversible hash is used — as the anonymous user ID for RevenueCat (see §6) — to remember when the free period began. The hash cannot be used to identify you or your device, and it is not used for advertising or tracking of any kind.</p>
+<h2>4. The 7-day free period and the device identifier</h2>
+<p>TidyTots gives every family 7 free days, granted by the app itself. There is <strong>no Play free-trial offer, no card, and nothing that can auto-convert into a charge</strong>. To keep those 7 days honest (so reinstalling the app does not restart them), the app derives a one-way identifier on the device (on Android: your device's Android ID combined with an app-specific salt, hashed with SHA-256; on iOS: a random identifier stored in the iOS Keychain). <strong>The raw device identifier never leaves your device.</strong> Only the one-way identifier is used — as the anonymous user ID for RevenueCat (see §6) — to remember when the free period began. The identifier cannot be used to identify you or your device, and it is not used for advertising or tracking of any kind.</p>
 
 <h2>5. Photo proofs</h2>
 <p>When a chore uses photo proof, the photo is captured with the in-app camera and stored encrypted in your family's space only — on your device. Photo proofs are <strong>automatically deleted 7 days after the parent's decision</strong> on the chore, unless you choose to keep a photo. We never run facial recognition or any biometric processing on photos, never use them for any other purpose, and never share them with any third party.</p>
@@ -81,7 +81,7 @@ Last updated: October 24, 2026</p>
 </ul>
 
 <h2>10. Security</h2>
-<p>Family data on the device is encrypted at rest (SQLCipher) with the key protected by Android's secure storage; purchase traffic is encrypted in transit; and purchase integrity is verified against server-checked receipts rather than anything stored locally. Device backups are governed by your device's own settings; TidyTots does not upload your family's data anywhere. No system is perfectly secure, but the design goal is simple: there is very little data anywhere except on your own devices.</p>
+<p>Family data on the device is encrypted at rest (SQLCipher) with the key protected by secure on-device storage (Android Keystore / iOS Keychain); purchase traffic is encrypted in transit; and purchase integrity is verified against server-checked receipts rather than anything stored locally. Device backups are governed by your device's own settings; TidyTots does not upload your family's data anywhere. No system is perfectly secure, but the design goal is simple: there is very little data anywhere except on your own devices.</p>
 
 <h2>11. Changes to this policy</h2>
 <p>If we change this policy in a way that affects how your family's data is handled, we will update this page, change the date at the top, and surface the change in the Parent Zone before it takes effect. The in-app plain-language summary in the Parent Zone always matches this page.</p>
